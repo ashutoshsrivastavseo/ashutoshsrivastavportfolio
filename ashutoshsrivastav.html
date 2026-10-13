@@ -1,0 +1,2923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Ashutosh Srivastav - Senior SEO Executive and Senior Digital Marketing Specialist with 4+ years of experience in SEO, digital marketing, technical SEO, content strategy, B2B, SaaS and multiple industries.">
+
+    <meta name="keywords"
+          content="Ashutosh Srivastav, Senior SEO Executive, SEO Executive, Digital Marketing Specialist, SEO Expert, Technical SEO, On Page SEO, Off Page SEO, B2B SEO, SaaS SEO">
+
+    <meta name="author" content="Ashutosh Srivastav">
+
+    <title>Ashutosh Srivastav | Senior SEO Executive</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <style>
+
+        /* =========================================================
+           ROOT
+        ========================================================= */
+
+        :root {
+            --black: #0b0d0f;
+            --dark: #111417;
+            --dark2: #171b1f;
+
+            --white: #ffffff;
+            --offwhite: #f5f6f2;
+
+            --text: #303438;
+            --muted: #7b8187;
+
+            --border: #dfe2df;
+            --dark-border: #292e33;
+
+            --lime: #caff45;
+            --lime-dark: #a7d72e;
+
+            --max-width: 1180px;
+        }
+
+
+        /* =========================================================
+           RESET
+        ========================================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            background: var(--white);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+
+        /* =========================================================
+           GLOBAL
+        ========================================================= */
+
+        .container {
+            width: min(92%, var(--max-width));
+            margin: auto;
+        }
+
+        section {
+            padding: 110px 0;
+        }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+
+            font-size: 12px;
+            font-weight: 700;
+
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            color: var(--muted);
+
+            margin-bottom: 18px;
+        }
+
+        .section-label::before {
+            content: "";
+            width: 28px;
+            height: 2px;
+            background: var(--lime);
+        }
+
+        .section-title {
+            font-family: "Manrope", sans-serif;
+
+            font-size: clamp(34px, 5vw, 58px);
+
+            line-height: 1.05;
+            letter-spacing: -2px;
+
+            color: var(--black);
+
+            margin-bottom: 25px;
+        }
+
+        .section-description {
+            max-width: 680px;
+
+            font-size: 17px;
+            color: var(--muted);
+
+            line-height: 1.8;
+        }
+
+
+        /* =========================================================
+           HEADER
+        ========================================================= */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+
+            z-index: 1000;
+
+            background: rgba(255, 255, 255, 0.92);
+
+            backdrop-filter: blur(14px);
+
+            border-bottom: 1px solid rgba(223, 226, 223, 0.8);
+
+            transition: 0.3s ease;
+        }
+
+        header.scrolled {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+        }
+
+        .nav {
+            height: 78px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: "Manrope", sans-serif;
+
+            font-size: 21px;
+            font-weight: 800;
+
+            letter-spacing: -0.7px;
+
+            color: var(--black);
+        }
+
+        .logo span {
+            color: #8dbb14;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            position: relative;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            color: #454a4e;
+
+            transition: 0.25s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--black);
+        }
+
+        .nav-links a::after {
+            content: "";
+
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+
+            width: 0;
+            height: 2px;
+
+            background: var(--lime);
+
+            transition: 0.25s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background: var(--black);
+            color: var(--white) !important;
+
+            padding: 12px 19px;
+
+            border-radius: 4px;
+        }
+
+        .nav-cta:hover {
+            background: #25292d;
+        }
+
+        .nav-cta::after {
+            display: none;
+        }
+
+        .menu-btn {
+            display: none;
+
+            border: 0;
+            background: none;
+
+            font-size: 27px;
+
+            cursor: pointer;
+        }
+
+
+        /* =========================================================
+           HERO
+        ========================================================= */
+
+        .hero {
+            min-height: 100vh;
+
+            padding-top: 150px;
+            padding-bottom: 90px;
+
+            background:
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(202, 255, 69, 0.15),
+                    transparent 28%
+                ),
+                var(--offwhite);
+
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-grid {
+            display: grid;
+
+            grid-template-columns: 1.2fr 0.8fr;
+
+            gap: 80px;
+
+            align-items: center;
+        }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+
+            font-size: 13px;
+            font-weight: 700;
+
+            color: #555c60;
+
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+
+            margin-bottom: 24px;
+        }
+
+        .hero-eyebrow span {
+            width: 8px;
+            height: 8px;
+
+            border-radius: 50%;
+
+            background: var(--lime);
+        }
+
+        .hero h1 {
+            font-family: "Manrope", sans-serif;
+
+            font-size: clamp(50px, 7vw, 86px);
+
+            line-height: 0.98;
+
+            letter-spacing: -4px;
+
+            color: var(--black);
+
+            margin-bottom: 28px;
+        }
+
+        .hero h1 span {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+
+        .hero h1 span::after {
+            content: "";
+
+            position: absolute;
+
+            bottom: 5px;
+            left: 0;
+
+            width: 100%;
+            height: 13px;
+
+            background: var(--lime);
+
+            z-index: -1;
+        }
+
+        .hero-text {
+            max-width: 650px;
+
+            font-size: 18px;
+
+            color: #666d71;
+
+            line-height: 1.8;
+
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+
+            gap: 14px;
+
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 14px 24px;
+
+            border-radius: 4px;
+
+            font-size: 14px;
+            font-weight: 700;
+
+            transition: 0.25s ease;
+        }
+
+        .btn-primary {
+            background: var(--black);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background: #25292d;
+        }
+
+        .btn-secondary {
+            border: 1px solid #cfd4d0;
+            color: var(--black);
+
+            background: transparent;
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            transform: translateY(-2px);
+        }
+
+
+        /* HERO CARD */
+
+        .hero-card {
+            background: var(--black);
+
+            padding: 35px;
+
+            color: var(--white);
+
+            position: relative;
+
+            overflow: hidden;
+
+            min-height: 410px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            box-shadow: 25px 25px 0 var(--lime);
+        }
+
+        .hero-card::before {
+            content: "";
+
+            position: absolute;
+
+            width: 240px;
+            height: 240px;
+
+            border-radius: 50%;
+
+            background: rgba(202, 255, 69, 0.08);
+
+            right: -80px;
+            top: -80px;
+        }
+
+        .hero-card-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-card-label {
+            font-size: 11px;
+
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            color: #aeb5b9;
+        }
+
+        .availability {
+            display: flex;
+            align-items: center;
+
+            gap: 7px;
+
+            font-size: 12px;
+            color: #caff45;
+        }
+
+        .availability i {
+            width: 7px;
+            height: 7px;
+
+            background: var(--lime);
+
+            border-radius: 50%;
+        }
+
+        .hero-card-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-card-content h3 {
+            font-family: "Manrope", sans-serif;
+
+            font-size: 32px;
+
+            line-height: 1.15;
+
+            margin-bottom: 14px;
+        }
+
+        .hero-card-content p {
+            color: #9ea5aa;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+
+            max-width: 400px;
+        }
+
+        .hero-stats {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 1px;
+
+            background: var(--dark-border);
+
+            margin-top: 30px;
+        }
+
+        .hero-stat {
+            background: var(--black);
+
+            padding: 20px;
+        }
+
+        .hero-stat strong {
+            display: block;
+
+            font-family: "Manrope", sans-serif;
+
+            font-size: 27px;
+
+            color: var(--lime);
+        }
+
+        .hero-stat span {
+            display: block;
+
+            font-size: 11px;
+
+            color: #90979c;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+        }
+
+
+        /* =========================================================
+           ABOUT
+        ========================================================= */
+
+        .about {
+            background: var(--white);
+        }
+
+        .about-grid {
+            display: grid;
+
+            grid-template-columns: 0.75fr 1.25fr;
+
+            gap: 100px;
+
+            align-items: start;
+        }
+
+        .about-number {
+            font-family: "Manrope", sans-serif;
+
+            font-size: 120px;
+
+            line-height: 0.8;
+
+            font-weight: 800;
+
+            letter-spacing: -8px;
+
+            color: #eef0ed;
+        }
+
+        .about-content h3 {
+            font-family: "Manrope", sans-serif;
+
+            font-size: 35px;
+
+            letter-spacing: -1.5px;
+
+            color: var(--black);
+
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            color: var(--muted);
+
+            font-size: 16px;
+
+            line-height: 1.85;
+
+            margin-bottom: 20px;
+        }
+
+        .about-list {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 12px;
+
+            margin-top: 30px;
+        }
+
+        .about-list li {
+            padding: 14px 16px;
+
+            border: 1px solid var(--border);
+
+            background: #fafbf9;
+
+            font-size: 14px;
+
+            font-weight: 600;
+        }
+
+        .about-list li::before {
+            content: "✓";
+
+            color: #7ea700;
+
+            margin-right: 8px;
+
+            font-weight: 800;
+        }
+
+
+        /* =========================================================
+           EXPERTISE
+        ========================================================= */
+
+        .expertise {
+            background: var(--offwhite);
+        }
+
+        .cards-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 18px;
+
+            margin-top: 55px;
+        }
+
+        .service-card {
+            padding: 30px;
+
+            background: var(--white);
+
+            border: 1px solid var(--border);
+
+            min-height: 235px;
+
+            transition: 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+
+            border-color: #b7bdba;
+
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
+        }
+
+        .service-number {
+            font-size: 12px;
+
+            font-weight: 800;
+
+            color: #8a9195;
+
+            margin-bottom: 30px;
+        }
+
+        .service-card h3 {
+            font-family: "Manrope", sans-serif;
+
+            font-size: 21px;
+
+            color: var(--black);
+
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            font-size: 14px;
+
+            color: var(--muted);
+
+            line-height: 1.7;
+        }
+
+
+        /* =========================================================
+           INDUSTRIES
+        ========================================================= */
+
+        .industries {
+            background: var(--black);
+
+            color: var(--white);
+        }
+
+        .industries .section-title {
+            color: var(--white);
+        }
+
+        .industries .section-description {
+            color: #9ba2a7;
+        }
+
+        .industry-grid {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 1px;
+
+            background: var(--dark-border);
+
+            margin-top: 55px;
+
+            border: 1px solid var(--dark-border);
+        }
+
+        .industry {
+            min-height: 150px;
+
+            padding: 25px;
+
+            background: var(--dark);
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: space-between;
+
+            transition: 0.3s ease;
+        }
+
+        .industry:hover {
+            background: #1c2125;
+        }
+
+        .industry span {
+            font-size: 11px;
+
+            color: #6f777c;
+
+            letter-spacing: 1px;
+        }
+
+        .industry h3 {
+            font-family: "Manrope", sans-serif;
+
+            font-size: 18px;
+        }
+
+
+        /* =========================================================
+           PROJECTS
+        ========================================================= */
+
+        .projects {
+            background: var(--white);
+        }
+
+        .project-list {
+            display: grid;
+
+            gap: 22px;
+
+            margin-top: 55px;
+        }
+
+        .project-card {
+            display: grid;
+
+            grid-template-columns: 0.75fr 1.25fr;
+
+            border: 1px solid var(--border);
+
+            background: var(--white);
+
+            transition: 0.3s ease;
+
+            overflow: hidden;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+
+            box-shadow: 0 18px 50px rgba(0, 0, 0, 0.07);
+        }
+
+        .project-side {
+            background: var(--black);
+
+            color: var(--white);
+
+            padding: 35px;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+        .project-side::after {
+            content: "";
+
+            position: absolute;
+
+            width: 180px;
+            height: 180px;
+
+            border-radius: 50%;
+
+            border: 1px solid rgba(202, 255, 69, 0.18);
+
+            right: -80px;
+            bottom: -70px;
+        }
+
+        .project-number {
+            color: var(--lime);
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 50px;
+        }
+
+        .project-side h3 {
+            font-family: "Manrope", sans-serif;
+
+            font-size: 30px;
+
+            line-height: 1.15;
+
+            margin-bottom: 12px;
+        }
+
+        .project-side p {
+            color: #949ca1;
+
+            font-size: 13px;
+
+            line-height: 1.7;
+        }
+
+        .project-content {
+            padding: 35px;
+        }
+
+        .project-meta {
+            display: flex;
+
+            gap: 10px;
+
+            flex-wrap: wrap;
+
+            margin-bottom: 22px;
+        }
+
+        .tag {
+            padding: 7px 10px;
+
+            border: 1px solid var(--border);
+
+            background: #f8f9f7;
+
+            font-size: 11px;
+
+            font-weight: 700;
+
+            color: #60676b;
+
+            border-radius: 3px;
+        }
+
+        .project-content h4 {
+            font-family: "Manrope", sans-serif;
+
+            font-size: 21px;
+
+            color: var(--black);
+
+            margin-bottom: 15px;
+        }
+
+        .project-content p {
+            color: var(--muted);
+
+            font-size: 14px;
+
+            line-height: 1.75;
+
+            margin-bottom: 20px;
+        }
+
+        .keyword-title {
+            font-size: 11px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.5px;
+
+            font-weight: 800;
+
+            color: #70777b;
+
+            margin-bottom: 12px;
+        }
+
+        .keywords {
+            display: flex;
+
+            gap: 8px;
+
+            flex-wrap: wrap;
+        }
+
+        .keyword {
+            background: var(--offwhite);
+
+            border: 1px solid #e1e4e1;
+
+            padding: 8px 10px;
+
+            font-size: 12px;
+
+            color: #4c5357;
+
+            border-radius: 3px;
+        }
+
+
+        /* =========================================================
+           PROCESS
+        ========================================================= */
+
+        .process {
+            background: var(--offwhite);
+        }
+
+        .process-grid {
+            display: grid;
+
+            grid-template-columns: repeat(5, 1fr);
+
+            gap: 1px;
+
+            background: var(--border);
+
+            margin-top: 55px;
+        }
+
+        .process-item {
+            background: var(--white);
+
+            padding: 30px 22px;
+
+            min-height: 210px;
+        }
+
+        .process-item span {
+            font-family: "Manrope", sans-serif;
+
+            font-size: 42px;
+
+            font-weight: 800;
+
+            color: #e4e7e4;
+
+            display: block;
+
+            margin-bottom: 25px;
+        }
+
+        .process-item h3 {
+            font-family: "Manrope", sans-serif;
+
+            font-size: 18px;
+
+            color: var(--black);
+
+            margin-bottom: 10px;
+        }
+
+        .process-item p {
+            font-size: 13px;
+
+            color: var(--muted);
+
+            line-height: 1.7;
+        }
+
+
+        /* =========================================================
+           EXPERIENCE
+        ========================================================= */
+
+        .experience {
+            background: var(--white);
+        }
+
+        .timeline {
+            position: relative;
+
+            margin-top: 55px;
+
+            border-top: 1px solid var(--border);
+        }
+
+        .timeline-item {
+            display: grid;
+
+            grid-template-columns: 220px 1fr;
+
+            gap: 55px;
+
+            padding: 35px 0;
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .timeline-date {
+            font-size: 13px;
+
+            color: var(--muted);
+
+            font-weight: 600;
+        }
+
+        .timeline-content h3 {
+            font-family: "Manrope", sans-serif;
+
+            font-size: 24px;
+
+            color: var(--black);
+
+            margin-bottom: 5px;
+        }
+
+        .company {
+            font-size: 14px;
+
+            font-weight: 700;
+
+            color: #7b990e;
+
+            margin-bottom: 12px;
+        }
+
+        .timeline-content p {
+            font-size: 14px;
+
+            color: var(--muted);
+
+            line-height: 1.8;
+
+            max-width: 750px;
+        }
+
+
+        /* =========================================================
+           EDUCATION
+        ========================================================= */
+
+        .education {
+            background: var(--offwhite);
+        }
+
+        .education-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 18px;
+
+            margin-top: 55px;
+        }
+
+        .education-card {
+            background: var(--white);
+
+            border: 1px solid var(--border);
+
+            padding: 30px;
+
+            transition: 0.3s ease;
+        }
+
+        .education-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+        }
+
+        .education-year {
+            font-size: 12px;
+
+            color: #8a9195;
+
+            font-weight: 700;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 25px;
+        }
+
+        .education-card h3 {
+            font-family: "Manrope", sans-serif;
+
+            font-size: 21px;
+
+            color: var(--black);
+
+            margin-bottom: 8px;
+        }
+
+        .education-card p {
+            color: var(--muted);
+
+            font-size: 14px;
+
+            line-height: 1.6;
+        }
+
+
+        /* =========================================================
+           TOOLS
+        ========================================================= */
+
+        .tools {
+            background: var(--black);
+
+            color: var(--white);
+        }
+
+        .tools .section-title {
+            color: var(--white);
+        }
+
+        .tools .section-description {
+            color: #969da2;
+        }
+
+        .tool-list {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            margin-top: 45px;
+        }
+
+        .tool {
+            padding: 13px 17px;
+
+            border: 1px solid var(--dark-border);
+
+            background: var(--dark);
+
+            color: #c9ced1;
+
+            font-size: 13px;
+
+            transition: 0.25s ease;
+        }
+
+        .tool:hover {
+            border-color: var(--lime);
+
+            color: var(--lime);
+        }
+
+
+        /* =========================================================
+           CONTACT
+        ========================================================= */
+
+        .contact {
+            background: var(--lime);
+
+            color: var(--black);
+        }
+
+        .contact-grid {
+            display: grid;
+
+            grid-template-columns: 1.2fr 0.8fr;
+
+            gap: 80px;
+
+            align-items: center;
+        }
+
+        .contact .section-label {
+            color: #45510f;
+        }
+
+        .contact .section-title {
+            color: var(--black);
+
+            margin-bottom: 20px;
+        }
+
+        .contact-description {
+            max-width: 620px;
+
+            font-size: 17px;
+
+            color: #4b551e;
+
+            line-height: 1.8;
+        }
+
+        .contact-buttons {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 12px;
+
+            align-items: flex-start;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+
+            align-items: center;
+
+            width: 100%;
+
+            max-width: 320px;
+
+            padding: 16px 20px;
+
+            background: var(--black);
+
+            color: var(--white);
+
+            border-radius: 4px;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            transition: 0.25s ease;
+        }
+
+        .contact-btn:hover {
+            transform: translateX(5px);
+
+            background: #24282c;
+        }
+
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        footer {
+            background: var(--black);
+
+            color: var(--white);
+
+            padding: 35px 0;
+        }
+
+        .footer-inner {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .footer-logo {
+            font-family: "Manrope", sans-serif;
+
+            font-size: 18px;
+
+            font-weight: 800;
+        }
+
+        .footer-logo span {
+            color: var(--lime);
+        }
+
+        .footer-text {
+            font-size: 12px;
+
+            color: #737b80;
+        }
+
+        .back-top {
+            font-size: 12px;
+
+            color: #9ba2a6;
+
+            border-bottom: 1px solid #555c60;
+
+            padding-bottom: 3px;
+        }
+
+
+        /* =========================================================
+           REVEAL ANIMATION
+        ========================================================= */
+
+        .reveal {
+            opacity: 0;
+
+            transform: translateY(25px);
+
+            transition:
+                opacity 0.7s ease,
+                transform 0.7s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+
+            transform: translateY(0);
+        }
+
+
+        /* =========================================================
+           RESPONSIVE
+        ========================================================= */
+
+        @media (max-width: 1000px) {
+
+            .hero-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-card {
+                max-width: 650px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+
+                gap: 35px;
+            }
+
+            .about-number {
+                font-size: 80px;
+            }
+
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .industry-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .project-card {
+                grid-template-columns: 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .education-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        @media (max-width: 760px) {
+
+            section {
+                padding: 80px 0;
+            }
+
+            .nav {
+                height: 70px;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+
+                top: 70px;
+                left: 0;
+
+                width: 100%;
+
+                background: var(--white);
+
+                border-bottom: 1px solid var(--border);
+
+                padding: 20px;
+
+                display: none;
+
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                gap: 20px;
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .hero {
+                padding-top: 125px;
+            }
+
+            .hero h1 {
+                font-size: 52px;
+
+                letter-spacing: -2.8px;
+            }
+
+            .hero-card {
+                box-shadow: 12px 12px 0 var(--lime);
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .industry-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-item {
+                grid-template-columns: 1fr;
+
+                gap: 10px;
+            }
+
+            .about-list {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+        }
+
+
+        @media (max-width: 480px) {
+
+            .hero h1 {
+                font-size: 43px;
+            }
+
+            .section-title {
+                font-size: 39px;
+            }
+
+            .hero-card {
+                padding: 25px;
+            }
+
+            .project-side,
+            .project-content {
+                padding: 25px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+
+                align-items: stretch;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header id="header">
+
+    <div class="container nav">
+
+        <a href="#home" class="logo">
+            Ashutosh Srivastav<span></span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open Menu">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="#about">About</a>
+
+            <a href="#expertise">Expertise</a>
+
+            <a href="#industries">Industries</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#experience">Experience</a>
+
+            <a href="#education">Education</a>
+
+            <a href="#contact" class="nav-cta">
+                Let's Connect
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+
+            <div class="hero-eyebrow">
+                <span></span>
+                Senior SEO Executive / Digital Marketing Specialist
+            </div>
+
+            <h1>
+                Turning Search
+                <span>Visibility</span>
+                Into Growth.
+            </h1>
+
+            <p class="hero-text">
+               I’m Ashutosh Srivastav, an SEO & Digital Marketing professional with 4+ years of experience in Technical SEO, On-Page & Off-Page SEO, Keyword Research, Content Strategy, and Organic Growth. I also specialize in AEO, GEO, AI Overviews, AI Search and Optimization helping brands improve visibility across traditional and AI-powered search platforms.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn btn-primary">
+                    View My Projects →
+                </a>
+
+                <a href="#contact" class="btn btn-secondary">
+                    Let's Connect
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card reveal">
+
+            <div class="hero-card-top">
+
+                <span class="hero-card-label">
+                    SEO Professional
+                </span>
+
+                <div class="availability">
+                    <i></i>
+                    Open to Opportunities
+                </div>
+
+            </div>
+
+
+            <div class="hero-card-content">
+
+                <h3>
+                    SEO that combines strategy,
+                    execution & measurable search visibility.
+                </h3>
+
+                <p>
+                    Experienced in working across multiple industries
+                    including healthcare, education, hospitality,
+                    market research, finance, digital marketing,
+                    B2B and SaaS.
+                </p>
+
+            </div>
+
+
+            <div class="hero-stats">
+
+                <div class="hero-stat">
+                    <strong>4+</strong>
+                    <span>Years Experience</span>
+                </div>
+
+                <div class="hero-stat">
+                    <strong>4</strong>
+                    <span>Organizations</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div class="reveal">
+
+                <div class="section-label">
+                    About Me
+                </div>
+
+                <div class="about-number">
+                    04+
+                </div>
+
+            </div>
+
+
+            <div class="about-content reveal">
+
+                <h3>
+                    SEO is more than rankings.
+                    It's measurable growth.
+                </h3>
+
+                <p>
+                    I am a results-driven Senior SEO Executive /
+                    Senior Digital Marketing Specialist with
+                    4+ years of professional experience in Search
+                    Engine Optimization and digital marketing.
+                </p>
+
+                <p>
+                    My experience covers keyword research, keyword
+                    strategy, content optimization, meta elements,
+                    technical SEO, on-page optimization, off-page
+                    optimization, backlink building, competitor
+                    analysis, website audits, analytics and SEO
+                    performance reporting.
+                </p>
+
+                <p>
+                    I focus on building sustainable organic search
+                    strategies by combining technical optimization,
+                    relevant content and authority-building activities.
+                </p>
+
+
+                <ul class="about-list">
+
+                    <li>Technical SEO</li>
+
+                    <li>Keyword Research</li>
+
+                    <li>On-Page SEO</li>
+
+                    <li>Off-Page SEO</li>
+
+                    <li>Content Optimization</li>
+
+                    <li>Competitor Analysis</li>
+
+                    <li>SEO Audits</li>
+
+                    <li>Performance Reporting</li>
+                  <li>AEO, GEO Optimization</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     EXPERTISE
+========================================================= -->
+
+<section class="expertise" id="expertise">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Core Expertise
+        </div>
+
+        <h2 class="section-title reveal">
+            What I Do Best
+        </h2>
+
+        <p class="section-description reveal">
+            My SEO approach combines technical optimization,
+            strategic keyword targeting, content development,
+            authority building and performance analysis.
+        </p>
+
+
+        <div class="cards-grid">
+
+
+            <div class="service-card reveal">
+
+                <div class="service-number">01</div>
+
+                <h3>
+                    Technical SEO
+                </h3>
+
+                <p>
+                    Website audits, crawlability, indexing,
+                    sitemap, robots.txt, canonical tags,
+                    broken links, redirects, page speed,
+                    mobile optimization and schema markup.
+                </p>
+
+            </div>
+
+
+            <div class="service-card reveal">
+
+                <div class="service-number">02</div>
+
+                <h3>
+                    On-Page SEO
+                </h3>
+
+                <p>
+                    Keyword research, keyword mapping,
+                    meta title and description optimization,
+                    content optimization, URL structure,
+                    internal linking and image optimization.
+                </p>
+
+            </div>
+
+
+            <div class="service-card reveal">
+
+                <div class="service-number">03</div>
+
+                <h3>
+                    Off-Page SEO
+                </h3>
+
+                <p>
+                    Link building, guest posting, business
+                    listings, profile creation, social
+                    bookmarking, content promotion and
+                    toxic backlink identification.
+                </p>
+
+            </div>
+
+
+            <div class="service-card reveal">
+
+                <div class="service-number">04</div>
+
+                <h3>
+                    Keyword Strategy
+                </h3>
+
+                <p>
+                    Search intent analysis, competitor research,
+                    keyword opportunities, long-tail keyword
+                    targeting and strategic keyword implementation.
+                </p>
+
+            </div>
+
+
+            <div class="service-card reveal">
+
+                <div class="service-number">05</div>
+
+                <h3>
+                    Content Strategy
+                </h3>
+
+                <p>
+                    SEO content optimization, landing page
+                    optimization, content planning, meta elements,
+                    CTAs and search-focused content improvement.
+                </p>
+              
+
+            </div>
+
+
+           <div class="service-card reveal">
+
+                <div class="service-number">06</div>
+              <h3>
+                    Local SEO
+                </h3>
+              <p>Local SEO strategy, Google Business Profile optimization,
+local keyword research, citation building, NAP consistency,
+local content optimization, review management and
+location-based search visibility improvement.</p>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     INDUSTRIES
+========================================================= -->
+
+<section class="industries" id="industries">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Industry Experience
+        </div>
+
+        <h2 class="section-title reveal">
+            SEO Across Multiple Industries
+        </h2>
+
+        <p class="section-description reveal">
+            Experience working with SEO strategies and search
+            requirements across different business categories.
+        </p>
+
+
+        <div class="industry-grid">
+
+
+            <div class="industry reveal">
+                <span>01</span>
+                <h3>Healthcare</h3>
+            </div>
+
+
+            <div class="industry reveal">
+                <span>02</span>
+                <h3>Travel</h3>
+            </div>
+
+
+            <div class="industry reveal">
+                <span>03</span>
+                <h3>Education</h3>
+            </div>
+
+
+            <div class="industry reveal">
+                <span>04</span>
+                <h3>Tech</h3>
+            </div>
+
+
+            <div class="industry reveal">
+                <span>05</span>
+                <h3>Market Research</h3>
+            </div>
+
+
+            <div class="industry reveal">
+                <span>06</span>
+                <h3>Finance</h3>
+            </div>
+
+
+            <div class="industry reveal">
+                <span>07</span>
+                <h3>Digital Marketing</h3>
+            </div>
+
+
+            <div class="industry reveal">
+                <span>08</span>
+                <h3>B2B & SaaS</h3>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PROJECTS
+========================================================= -->
+
+<section class="projects" id="projects">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Selected Projects
+        </div>
+
+        <h2 class="section-title reveal">
+            SEO Projects & Keyword Focus
+        </h2>
+
+        <p class="section-description reveal">
+            Selected SEO work and keyword focus areas from
+            projects handled across different business categories.
+        </p>
+
+
+        <div class="project-list">
+
+
+            <!-- PROJECT 01 -->
+
+            <article class="project-card reveal">
+
+                <div class="project-side">
+
+                    <div class="project-number">
+                        PROJECT / 01
+                    </div>
+
+                    <h3>
+                        IMARC Group
+                    </h3>
+
+                    <p>
+                        Market Research / B2B
+                    </p>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <div class="project-meta">
+
+                        <span class="tag">
+                            Market Research
+                        </span>
+
+                        <span class="tag">
+                            B2B SEO
+                        </span>
+
+                        <span class="tag">
+                            International SEO
+                        </span>
+
+                    </div>
+
+
+                    <h4>
+                        Market Research SEO
+                    </h4>
+
+                    <p>
+                        SEO project focused on market research
+                        topics and high-intent search terms
+                        across United States-focused markets.
+                    </p>
+
+
+                    <div class="keyword-title">
+                        Keyword Focus
+                    </div>
+
+                    <div class="keywords">
+
+                        <span class="keyword">
+                            united states cigarette market
+                        </span>
+
+                        <span class="keyword">
+                            united states ecommerce market
+                        </span>
+
+                        <span class="keyword">
+                            united states ai market
+                        </span>
+
+                        <span class="keyword">
+                            united states cloud computing market
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 02 -->
+
+            <article class="project-card reveal">
+
+                <div class="project-side">
+
+                    <div class="project-number">
+                        PROJECT / 02
+                    </div>
+
+                    <h3>
+                        Marigold Service
+                    </h3>
+
+                    <p>
+                        Local SEO / Building Management
+                    </p>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <div class="project-meta">
+
+                        <span class="tag">
+                            Local SEO
+                        </span>
+
+                        <span class="tag">
+                            Service Business
+                        </span>
+
+                        <span class="tag">
+                            Australia
+                        </span>
+
+                    </div>
+
+
+                    <h4>
+                        Local SEO & Service Keywords
+                    </h4>
+
+                    <p>
+                        Local search-focused SEO project targeting
+                        building management services and location-based
+                        search terms across Sydney areas.
+                    </p>
+
+
+                    <div class="keyword-title">
+                        Keyword Focus
+                    </div>
+
+                    <div class="keywords">
+
+                        <span class="keyword">
+                            building management ashfield
+                        </span>
+
+                        <span class="keyword">
+                            building management lidcombe
+                        </span>
+
+                        <span class="keyword">
+                            building management mascot
+                        </span>
+
+                        <span class="keyword">
+                            building management rhodes
+                        </span>
+
+                        <span class="keyword">
+                            building management rosebery
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 03 -->
+
+            <article class="project-card reveal">
+
+                <div class="project-side">
+
+                    <div class="project-number">
+                        PROJECT / 03
+                    </div>
+
+                    <h3>
+                        Multicomponents
+                    </h3>
+
+                    <p>
+                        Industrial / B2B SEO
+                    </p>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <div class="project-meta">
+
+                        <span class="tag">
+                            B2B SEO
+                        </span>
+
+                        <span class="tag">
+                            Industrial
+                        </span>
+
+                        <span class="tag">
+                            Australia
+                        </span>
+
+                    </div>
+
+
+                    <h4>
+                        Industrial Product SEO
+                    </h4>
+
+                    <p>
+                        SEO project focused on industrial components,
+                        chute systems and product-specific commercial
+                        search terms.
+                    </p>
+
+
+                    <div class="keyword-title">
+                        Keyword Focus
+                    </div>
+
+                    <div class="keywords">
+
+                        <span class="keyword">
+                            escalator parts suppliers sydney
+                        </span>
+
+                        <span class="keyword">
+                            chute doors
+                        </span>
+
+                        <span class="keyword">
+                            chute doors suppliers sydney
+                        </span>
+
+                        <span class="keyword">
+                            linen chute suppliers
+                        </span>
+
+                        <span class="keyword">
+                            chute parts
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SEO PROCESS
+========================================================= -->
+
+<section class="process">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            My Process
+        </div>
+
+        <h2 class="section-title reveal">
+            A Structured SEO Workflow
+        </h2>
+
+        <p class="section-description reveal">
+            Every SEO campaign starts with understanding the website,
+            business objectives, competitors and search intent before
+            implementing an optimization strategy.
+        </p>
+
+
+        <div class="process-grid">
+
+
+            <div class="process-item reveal">
+
+                <span>01</span>
+
+                <h3>
+                    Audit
+                </h3>
+
+                <p>
+                    Analyze website health, indexing,
+                    technical issues, content and existing
+                    search visibility.
+                </p>
+
+            </div>
+
+
+            <div class="process-item reveal">
+
+                <span>02</span>
+
+                <h3>
+                    Research
+                </h3>
+
+                <p>
+                    Conduct keyword research, competitor
+                    analysis and search intent analysis.
+                </p>
+
+            </div>
+
+
+            <div class="process-item reveal">
+
+                <span>03</span>
+
+                <h3>
+                    Strategy
+                </h3>
+
+                <p>
+                    Build a practical SEO roadmap based
+                    on business priorities and opportunities.
+                </p>
+
+            </div>
+
+
+            <div class="process-item reveal">
+
+                <span>04</span>
+
+                <h3>
+                    Execute
+                </h3>
+
+                <p>
+                    Implement technical, on-page, content
+                    and off-page optimization activities.
+                </p>
+
+            </div>
+
+
+            <div class="process-item reveal">
+
+                <span>05</span>
+
+                <h3>
+                    Measure
+                </h3>
+
+                <p>
+                    Monitor rankings, traffic, KPIs and
+                    performance through analytics and reporting.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     EXPERIENCE
+========================================================= -->
+
+<section class="experience" id="experience">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Professional Experience
+        </div>
+
+        <h2 class="section-title reveal">
+            Career Journey
+        </h2>
+
+        <p class="section-description reveal">
+            More than four years of professional experience
+            across SEO and digital marketing roles.
+        </p>
+
+
+        <div class="timeline">
+
+
+            <!-- IMARC -->
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-date">
+                    May 2025 — May 2026
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Senior Digital Marketing Specialist
+                    </h3>
+
+                    <div class="company">
+                        IMARC Group Pvt. Ltd.
+                    </div>
+
+                    <p>
+                        Responsible for leading SEO strategies,
+                        improving organic search performance,
+                        and managing on-page and off-page
+                        optimization activities.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- XENELSOFT -->
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-date">
+                    July 2023 — March 2025
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Senior SEO Executive
+                    </h3>
+
+                    <div class="company">
+                        Xenelsoft Technologies
+                    </div>
+
+                    <p>
+                        Responsible for leading SEO strategies,
+                        improving organic search performance,
+                        and managing on-page and off-page
+                        optimization activities.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- GREEN BYTE -->
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-date">
+                    June 2022 — July 2023
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        SEO Executive
+                    </h3>
+
+                    <div class="company">
+                        Green Byte Web Technologies
+                    </div>
+
+                    <p>
+                        Focused on keyword research, content
+                        optimization, backlink building and
+                        performance tracking to enhance
+                        website rankings.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- NIGHTOWL -->
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-date">
+                    March 2021 — May 2022
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        SEO Executive
+                    </h3>
+
+                    <div class="company">
+                        Garygraph Technology Pvt Ltd
+                    </div>
+
+                    <p>
+                        Contributed to technical SEO audits,
+                        competitor analysis and digital marketing
+                        campaigns to support overall SEO goals.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     EDUCATION
+========================================================= -->
+
+<section class="education" id="education">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Education
+        </div>
+
+        <h2 class="section-title reveal">
+            Academic Background
+        </h2>
+
+        <p class="section-description reveal">
+            Academic qualifications supporting my professional
+            background in business and digital marketing.
+        </p>
+
+
+        <div class="education-grid">
+
+
+            <div class="education-card reveal">
+
+                <div class="education-year">
+                    GRADUATION
+                </div>
+
+                <h3>
+                    Bachelor of Commerce
+                </h3>
+
+                <p>
+                    D.A.V. PG College,
+                    Azamgarh
+                </p>
+
+            </div>
+
+
+            <div class="education-card reveal">
+
+                <div class="education-year">
+                    12th — 2016
+                </div>
+
+                <h3>
+                    Senior Secondary
+                </h3>
+
+                <p>
+                    St. Xavier’s High School,
+                    Azamgarh
+                </p>
+
+            </div>
+
+
+            <div class="education-card reveal">
+
+                <div class="education-year">
+                    10th — 2014
+                </div>
+
+                <h3>
+                    Secondary School
+                </h3>
+
+                <p>
+                    St. Xavier’s High School,
+                    Azamgarh
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     TOOLS
+========================================================= -->
+
+<section class="tools">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            SEO Toolkit
+        </div>
+
+        <h2 class="section-title reveal">
+            Tools & Platforms
+        </h2>
+
+        <p class="section-description reveal">
+            Tools and platforms used for SEO research,
+            technical analysis, reporting and performance monitoring.
+        </p>
+
+
+        <div class="tool-list reveal">
+
+            <div class="tool">
+                Google Search Console
+            </div>
+
+            <div class="tool">
+                Google Analytics
+            </div>
+
+            <div class="tool">
+                Google Keyword Planner
+            </div>
+
+            <div class="tool">
+                Google Business Profile
+            </div>
+
+            <div class="tool">
+                Ahrefs
+            </div>
+
+            <div class="tool">
+                SEMrush
+            </div>
+
+            <div class="tool">
+                Screaming Frog
+            </div>
+
+            <div class="tool">
+                Google Trends
+            </div>
+
+            <div class="tool">
+                PageSpeed Insights
+            </div>
+
+            <div class="tool">
+                Looker Studio
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section class="contact" id="contact">
+
+    <div class="container contact-grid">
+
+        <div class="reveal">
+
+            <div class="section-label">
+                Contact
+            </div>
+
+            <h2 class="section-title">
+                Let's Build Better
+                Search Visibility.
+            </h2>
+
+            <p class="contact-description">
+                Looking for a Senior SEO Executive or Digital Marketing
+                professional who can handle SEO strategy, keyword
+                research, technical optimization, content optimization,
+                link building and performance reporting?
+                Let's connect.
+            </p>
+
+        </div>
+
+
+        <div class="contact-buttons reveal">
+
+            <!-- Replace these placeholders with your actual details -->
+
+            <a href="mailto:ashutoshsri6394@gmail.com"
+               class="contact-btn">
+
+                Let's Connect → +91-6394287569
+            </a>
+
+
+            <a href="https://www.linkedin.com/in/ashutosh-srivastava-916196199/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-btn">
+
+                LinkedIn Profile →
+            </a>
+
+
+            <a href="#home"
+               class="contact-btn">
+
+                Back to Top ↑
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <div class="footer-logo">
+            Ashutosh Srivastav <span></span>
+        </div>
+
+        <div class="footer-text">
+            © <span id="year"></span> Ashutosh Srivastav.
+            All Rights Reserved.
+        </div>
+
+        <a href="#home" class="back-top">
+            Back to top ↑
+        </a>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+    /* =========================================================
+       MOBILE MENU
+    ========================================================= */
+
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", function () {
+
+        navLinks.classList.toggle("open");
+
+        if (navLinks.classList.contains("open")) {
+            menuBtn.innerHTML = "✕";
+        } else {
+            menuBtn.innerHTML = "☰";
+        }
+
+    });
+
+
+    /* CLOSE MOBILE MENU AFTER CLICK */
+
+    document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+            navLinks.classList.remove("open");
+
+            menuBtn.innerHTML = "☰";
+
+        });
+
+    });
+
+
+    /* =========================================================
+       HEADER SHADOW ON SCROLL
+    ========================================================= */
+
+    const header = document.getElementById("header");
+
+    window.addEventListener("scroll", function() {
+
+        if (window.scrollY > 30) {
+
+            header.classList.add("scrolled");
+
+        } else {
+
+            header.classList.remove("scrolled");
+
+        }
+
+    });
+
+
+    /* =========================================================
+       CURRENT YEAR
+    ========================================================= */
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+
+    /* =========================================================
+       SCROLL REVEAL
+    ========================================================= */
+
+    const revealElements =
+        document.querySelectorAll(".reveal");
+
+
+    const revealObserver =
+        new IntersectionObserver(
+
+            function(entries, observer) {
+
+                entries.forEach(function(entry) {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add("active");
+
+                        observer.unobserve(entry.target);
+
+                    }
+
+                });
+
+            },
+
+            {
+                threshold: 0.12
+            }
+
+        );
+
+
+    revealElements.forEach(function(element) {
+
+        revealObserver.observe(element);
+
+    });
+
+
+    /* =========================================================
+       SMOOTH ANCHOR OFFSET
+    ========================================================= */
+
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+
+        anchor.addEventListener("click", function(e) {
+
+            const targetId =
+                this.getAttribute("href");
+
+            if (
+                targetId !== "#" &&
+                document.querySelector(targetId)
+            ) {
+
+                e.preventDefault();
+
+                const target =
+                    document.querySelector(targetId);
+
+                const headerHeight =
+                    header.offsetHeight;
+
+                const targetPosition =
+                    target.getBoundingClientRect().top +
+                    window.pageYOffset -
+                    headerHeight;
+
+                window.scrollTo({
+
+                    top: targetPosition,
+
+                    behavior: "smooth"
+
+                });
+
+            }
+
+        });
+
+    });
+
+</script>
+
+
+</body>
+</html>
